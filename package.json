@@ -11,7 +11,6 @@
     "native:install": "cd ./src/native && yarn install",
     "native:build": "cd ./src/native && yarn build",
     "native:test": "cd ./src/native && yarn test",
-    "native:test:coverage": "cd ./src/native && yarn test:coverage",
     "copy-native": "shx mkdir -p ./dist/native && shx cp ./src/native/index.js ./src/native/*.node ./dist/native/"
   },
   "keywords": [],
