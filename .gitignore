@@ -1,0 +1,14 @@
+/npm
+/node_modules
+.yarn
+
+/src/native/node_modules
+/src/native/target
+/src/native/*.node
+/src/native/Cargo.lock
+/src/native/index.js
+/src/native/index.d.ts
+
+/dist
+
+.cursorignore

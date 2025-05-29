@@ -1,0 +1,30 @@
+{
+  "name": "ts-napi-rs-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules src/index.ts",
+    "build": "yarn native:build && tsc && yarn copy-native",
+    "native:install": "cd ./src/native && yarn install",
+    "native:build": "cd ./src/native && yarn build",
+    "copy-native": "shx mkdir -p ./dist/native && shx cp ./src/native/index.js ./src/native/*.node ./dist/native/"
+  },
+  "keywords": [],
+  "author": "Ian Torres",
+  "license": "MIT",
+  "description": "A boilerplate for a Node.js project with TypeScript and Rust",
+  "packageManager": "yarn@4.9.1",
+  "devDependencies": {
+    "@types/module-alias": "^2",
+    "@types/node": "^22.15.24",
+    "shx": "^0.4.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.3"
+  },
+  "_moduleAliases": {
+    "@native": "./dist/native"
+  }
+}
