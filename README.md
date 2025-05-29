@@ -9,7 +9,7 @@
 - **TypeScript**: The project is written in TypeScript, providing type safety and modern JavaScript features.
 - **Rust Integration**: Utilizes Rust for performance-critical components, exposing them to Node.js via N-API.
 - **Modular Structure**: Organized into separate directories for TypeScript and Rust code, making it easy to manage and extend.
-- **Development Tools**: Includes scripts for building, testing, and running the application.
+- **Development Tools**: Includes scripts for building and running the application.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/ts-napi-rs-boilerplate.git
+   git clone https://github.com/IanKarlo/ts-napi-rs-boilerplate.git
    cd ts-napi-rs-boilerplate
    ```
 
