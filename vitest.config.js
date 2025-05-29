@@ -14,8 +14,8 @@ export default defineConfig({
   exclude: ['node_modules', 'dist'],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
-      '@native': path.resolve(__dirname, './src/native/index.js')
+      '@': path.resolve(__dirname, 'src'),
+      '@native': path.resolve(__dirname, 'src/native/index.js')
     },
   },
 })
