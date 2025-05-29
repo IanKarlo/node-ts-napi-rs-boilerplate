@@ -24,7 +24,7 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/IanKarlo/ts-napi-rs-boilerplate.git
+   git clone [https://github.com/IanKarlo/ts-napi-rs-boilerplate.git](https://github.com/IanKarlo/node-ts-napi-rs-boilerplate.git)
    cd ts-napi-rs-boilerplate
    ```
 
