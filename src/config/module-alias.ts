@@ -3,9 +3,9 @@ import { addAlias } from 'module-alias'
 import { resolve } from 'path'
 
 let folder = 'src'
-if (process.env.TS_NODE_DEV === undefined) {
+if (process.env.TS_NODE_DEV === undefined && process.env.NODE_ENV !== 'test') {
   folder = 'dist'
 }
 
-addAlias('@', resolve(__dirname, '..', '..', folder))
-addAlias('@native', resolve(__dirname, '..', '..', folder, 'native', 'index.js'))
+addAlias('@', resolve(folder))
+addAlias('@native', resolve(folder, 'native', 'index.js'))

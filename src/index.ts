@@ -2,5 +2,11 @@ import './config/module-alias'
 
 import { sayHello, sayHelloTo } from '@native'
 
-console.log(sayHello())
-console.log(sayHelloTo('John'))
+export function main() {
+  console.log(sayHello())
+  console.log(sayHelloTo('John'))
+
+  return 0
+}
+
+main()

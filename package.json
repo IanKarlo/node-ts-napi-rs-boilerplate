@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node dist/index.js",
     "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules src/index.ts",
     "build": "yarn native:build && tsc && yarn copy-native",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
     "native:install": "cd ./src/native && yarn install",
     "native:build": "cd ./src/native && yarn build",
+    "native:test": "cd ./src/native && yarn test",
+    "native:test:coverage": "cd ./src/native && yarn test:coverage",
     "copy-native": "shx mkdir -p ./dist/native && shx cp ./src/native/index.js ./src/native/*.node ./dist/native/"
   },
   "keywords": [],
@@ -17,9 +22,11 @@
   "devDependencies": {
     "@types/module-alias": "^2",
     "@types/node": "^22.15.24",
+    "@vitest/coverage-v8": "3.1.4",
     "shx": "^0.4.0",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
   },
   "dependencies": {
     "module-alias": "^2.2.3"

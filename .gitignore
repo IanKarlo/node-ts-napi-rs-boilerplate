@@ -1,6 +1,7 @@
 /npm
 /node_modules
 .yarn
+/coverage
 
 /src/native/node_modules
 /src/native/target
